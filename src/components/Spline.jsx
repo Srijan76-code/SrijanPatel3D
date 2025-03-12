@@ -8,7 +8,7 @@ const Spline = () => {
                 <div className="text-white-800 opacity-90  ">
                     {/* <p className="font-bold text-6xl " > CREATIVE DEVELOPER.</p>
                     <p className="font-normal text-2xl mt-6 text-white-600 " >Crafting Digital Experiences.</p> */}
-                    <img className=" img-bg-container  " src="assets/CREATIVE4.gif" alt="" />
+                    <img className=" img-bg-container  " src="assets/CREATIVE12.gif" alt="" />
                     <div className=" flex justify-center items-center px-3 py-3 w-fit media-object  text-xl font-semibold hover:border-none   ">
                         <button className="text-amber-100 bg-black  px-3 py-2 hover:text-black hover:bg-white " >Download Resume</button>
                     </div>
