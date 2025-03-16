@@ -9,26 +9,30 @@
   max-width: 100vw;
 
 }
-html, body {
+
+html,
+body {
   margin: 0;
   padding: 0;
-  
-  overflow-x: hidden; 
-  
+
+  overflow-x: hidden;
+
 
 }
+
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
-  
+
 }
+
 /* EXPERIENCE CSS */
 
 
 .book {
   position: relative;
   border-radius: 10px;
-  left:-60px;
+  left: -60px;
   width: 500px;
   height: 300px;
   background-color: dark;
@@ -99,7 +103,7 @@ body {
 /* NAVBAR LINKS CSS OF BORDER */
 .media-object {
   color: white;
- 
+
   --border-width: 1px;
 
 
@@ -119,19 +123,19 @@ body {
   background-origin: border-box;
   -webkit-mask:
     linear-gradient(black, black) content-box,
-    linear-gradient(black, black);  
+    linear-gradient(black, black);
   mask: linear-gradient(black, black),
-        linear-gradient(black, black);
-  -webkit-mask-clip: content-box, border-box;  
+    linear-gradient(black, black);
+  -webkit-mask-clip: content-box, border-box;
   mask-clip: content-box, border-box;
-  -webkit-mask-composite: xor;  
+  -webkit-mask-composite: xor;
   mask-composite: exclude;
   animation: spin 3s linear infinite;
 }
 
 @supports not (background: paint(something)) {
   .media-object::before {
-background-image: conic-gradient(#000000 80%, #ffffff 88%, #ffffff 92%, #000000 100%);    
+    background-image: conic-gradient(#000000 80%, #ffffff 88%, #ffffff 92%, #000000 100%);
   }
 }
 
@@ -172,17 +176,18 @@ html *::before {
 
 .video-bg-container {
   position: absolute;
-  min-width:100vw
-  /* transform: translate(-50%, -50%); */
-  /* /* width: 100vw; 
-  /* height: 100vh; */ 
-  /* object-fit: cover; Ensures the video covers the entire area */
-  /* z-index: -1; Keeps video in the background */
+  min-width: 100vw
+    /* transform: translate(-50%, -50%); */
+    /* /* width: 100vw; 
+  /* height: 100vh; */
+    /* object-fit: cover; Ensures the video covers the entire area */
+    /* z-index: -1; Keeps video in the background */
 }
 
 .img-bg-container {
   width: 200%;
 }
+
 .grid-container {
 
   position: relative;
@@ -198,7 +203,7 @@ html *::before {
 
 
 
- 
+
 
 /* Dynamic border effect */
 .grid-container::after {
@@ -209,8 +214,8 @@ html *::before {
   padding: 2px;
   /* Border thickness */
   background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
-      rgba(0, 255, 128, 0.8),
-      #07FFFF,
+      #000000,
+      #ffffff,
       transparent 60%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -227,7 +232,7 @@ html *::before {
   border-radius: 18px;
   background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
       /* rgba(0, 255, 128, 0.8),  */
-      #15F4EE,
+      #aeaeae,
       /* IT HELPS TO CHENGE THE COLOR OF HOVERED GLOW EFFECT */
       transparent 35%);
   filter: blur(80px);
@@ -240,11 +245,16 @@ html *::before {
 .grid-container:hover::after,
 .grid-container:hover::before {
   opacity: 1;
-} 
+}
+
 
 
 
 @layer utilities {
+
+  /* .text-gradient {
+    @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
+  } */
   .c-space {
     @apply sm:px-10 px-5;
   }
@@ -258,11 +268,11 @@ html *::before {
   }
 
   .nav-li {
-    @apply text-white-800 hover:text-amber-100 font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5 ;
+    @apply text-white-800 hover:text-amber-100 font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base   transition-colors;
+    @apply text-lg md:text-base transition-colors;
   }
 
   .nav-sidebar {
@@ -357,19 +367,19 @@ html *::before {
 
   /* contact section */
   .contact-container {
-    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12  ;
+    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
   }
 
   .field-label {
-    @apply text-xl py-6 text-white-800 font-light ;
+    @apply text-xl py-6 text-white-800 font-light;
   }
 
   .field-input {
-    @apply w-full border-2 border-zinc-700 bg-zinc-900 px-5 py-2 min-h-14 rounded-lg placeholder:text-white-600 text-lg  text-white-800 font-extralight shadow-black shadow-2xl focus:outline-none;
+    @apply w-full border-2 border-zinc-700 bg-zinc-900 px-5 py-2 min-h-14 rounded-lg placeholder:text-white-600 text-lg text-white-800 font-extralight shadow-black shadow-2xl focus:outline-none;
   }
 
   .field-btn {
-    @apply   px-5 py-2 min-h-12 rounded-lg  flex justify-center items-center text-lg gap-3;
+    @apply px-5 py-2 min-h-12 rounded-lg flex justify-center items-center text-lg gap-3;
   }
 
   .field-btn_arrow {
@@ -378,7 +388,7 @@ html *::before {
 
   /*  footer */
   .social-icon {
-    @apply w-[52px] h-[52px] rounded-full flex justify-center items-center bg-black-300 border border-black-200 ;
+    @apply w-[52px] h-[52px] rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
 
   /* Glowing Border Effect */

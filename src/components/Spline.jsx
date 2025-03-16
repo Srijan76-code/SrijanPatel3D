@@ -5,10 +5,10 @@ const Spline = () => {
                 <div className="absolute w-full h-screen left-0 -z-40">
                     <img className="w-full h-full  opacity-50" src="assets/grid5.png" alt="" />
                 </div> 
-                <div className="text-white-800 opacity-90  ">
-                    {/* <p className="font-bold text-6xl " > CREATIVE DEVELOPER.</p>
-                    <p className="font-normal text-2xl mt-6 text-white-600 " >Crafting Digital Experiences.</p> */}
-                    <img className=" img-bg-container  " src="assets/CREATIVE12.gif" alt="" />
+                <div className="text-white-800  ">
+                    {/* <p className="font-bold text-7xl bg-gradient-to-r from-white to-neutral-500 bg-clip-text text-transparent " > CREATIVE DEVELOPER</p>
+                    <p className="font-normal pb-3 text-xl mt-6 text-white-600 " >Crafting Digital Experiences...</p> */}
+                    <img className=" img-bg-container opacity-90  " src="assets/CREATIVE12.gif" alt="" />
                     <div className=" flex justify-center items-center px-3 py-3 w-fit media-object  text-xl font-semibold hover:border-none   ">
                         <button className="text-amber-100 bg-black  px-3 py-2 hover:text-black hover:bg-white " >Download Resume</button>
                     </div>
