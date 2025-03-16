@@ -8,6 +8,7 @@ import Spline from './components/Spline'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import ShowOnScroll from './components/ShowOnScroll'
 
 
 const App = () => {
@@ -18,8 +19,10 @@ const App = () => {
 
 
 
+      <ShowOnScroll>
+        <Navbar />
+      </ShowOnScroll>
 
-      <Navbar />
 
       <Spline />
 
